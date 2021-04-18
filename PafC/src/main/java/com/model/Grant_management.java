@@ -23,7 +23,7 @@ public class Grant_management {
 
 			con= (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/grant_management",
 					"root", "root");
-			System.out.println("Successfully Connected");
+			System.out.println(" Connected Successfully");
 
 		} catch (Exception e) {
 
