@@ -24,13 +24,7 @@ import com.model.Grant_management;
 public class grants_management_service {
 
 	Grant_management Obj = new Grant_management();
-	 @GET
-	  @Path("get")
-	  @Produces(MediaType.TEXT_PLAIN)
-	  public String getIt() {
-		 return "sajfsf!";
-		       
-	 }
+	 
 	 
 	 //Get method for Grants
 	  @GET
