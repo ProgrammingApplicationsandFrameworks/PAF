@@ -21,13 +21,13 @@ public class Fund_Management_Service {
 
 	Fund_Management Obj = new Fund_Management();
 	//Get METHOD
-  @GET
+  /*@GET
   @Path("get")
   @Produces(MediaType.TEXT_PLAIN)
   public String getIt() {
 	 return "Got it aruni!";
 	       
- }
+ }*/
   //Get method for fund
   @GET
 	@Path("getFunds")
