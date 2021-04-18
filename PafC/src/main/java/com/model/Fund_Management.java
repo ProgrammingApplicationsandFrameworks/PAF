@@ -35,7 +35,7 @@ public class Fund_Management {
 	}
 
 	//insert fund application details
-	public String insertApplication(int id,String full_name, String email, String phone, String research_category,String purpose) {
+	public String insertApplication(String id,String full_name, String email, String phone, String research_category,String purpose) {
 
 		String output = ""; 
 		
@@ -52,7 +52,7 @@ public class Fund_Management {
 			java.sql.PreparedStatement preparedStmt = con.prepareStatement(query);
 			
 			// binding values to appointment table
-			preparedStmt.setInt(1, id);
+			preparedStmt.setString(1, id);
 			preparedStmt.setString(2, full_name);
 			preparedStmt.setString(3, email);
 			preparedStmt.setString(4, phone);
