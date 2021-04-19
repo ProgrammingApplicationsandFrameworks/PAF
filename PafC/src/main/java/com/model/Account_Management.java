@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Account_Management {
 
 	
-	//getting DB connection
+	//getting the DB connection
 	private Connection connect() {
 
 		Connection con = null;
