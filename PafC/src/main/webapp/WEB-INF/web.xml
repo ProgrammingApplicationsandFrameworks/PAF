@@ -26,9 +26,10 @@
         <load-on-startup>2</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Jersey Web Application1</servlet-name>
+        <servlet-name>Jersey Web Application2</servlet-name>
         <url-pattern>/webapi1/*</url-pattern>
     </servlet-mapping>
+
     
     <servlet>
         <servlet-name>Jersey Web Application_Samithra</servlet-name>
@@ -43,6 +44,7 @@
         <servlet-name>Jersey Web Application_Samithra</servlet-name>
         <url-pattern>/webapi_Samithra/*</url-pattern>
     </servlet-mapping>
+
     
     <servlet>
         <servlet-name>Jersey Web Application2</servlet-name>
@@ -57,5 +59,8 @@
         <servlet-name>Jersey Web Application2</servlet-name>
         <url-pattern>/webapi_j/*</url-pattern>
     </servlet-mapping>
+
+
    
+
 </web-app>
