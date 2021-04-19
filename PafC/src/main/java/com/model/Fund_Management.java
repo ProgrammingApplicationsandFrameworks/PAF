@@ -49,6 +49,7 @@ public class Fund_Management {
 			}
 			// create a prepared statement
 			String query = " insert into fund_application (Application_ID,Full_Name,Email,Phone,Research_category,purpose)" + " values (?,?,?,?,?,?)"; 
+			
 			java.sql.PreparedStatement preparedStmt = con.prepareStatement(query);
 			
 			// binding values to appointment table
