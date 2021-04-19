@@ -29,4 +29,19 @@
         <servlet-name>Jersey Web Application1</servlet-name>
         <url-pattern>/webapi1/*</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Jersey Web Application_ac</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>com.restProject.PafC</param-value>
+        </init-param>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Jersey Web Application_ac</servlet-name>
+        <url-pattern>/webapiac/*</url-pattern>
+    </servlet-mapping>
+    
 </web-app>
