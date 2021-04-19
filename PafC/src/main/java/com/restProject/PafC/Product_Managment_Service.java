@@ -41,7 +41,7 @@ public class Product_Managment_Service {
 			return Obj1.readProducts();
 		}
 	  
-	//POST METHOD FOR Products
+	//POST METHOD FOR insert Products
 	  @POST 
 		@Path("AddProduct") 
 		@Consumes(MediaType.APPLICATION_FORM_URLENCODED) 
