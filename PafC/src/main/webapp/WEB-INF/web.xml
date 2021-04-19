@@ -31,6 +31,20 @@
     </servlet-mapping>
 
     
+    <servlet>
+        <servlet-name>Jersey Web Application_Samithra</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>com.restProject.PafC</param-value>
+        </init-param>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Jersey Web Application_Samithra</servlet-name>
+        <url-pattern>/webapi_Samithra/*</url-pattern>
+    </servlet-mapping>
+
     
     <servlet>
         <servlet-name>Jersey Web Application2</servlet-name>
@@ -45,6 +59,7 @@
         <servlet-name>Jersey Web Application2</servlet-name>
         <url-pattern>/webapi_j/*</url-pattern>
     </servlet-mapping>
+
 
    
 
