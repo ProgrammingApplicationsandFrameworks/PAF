@@ -257,40 +257,6 @@ public class Fund_Management {
 		}
 		return output;
 	}
-	public String insertAppointments(int id,String pID, String dID, String appDate, String appTime) {
 
-		String output = ""; 
-		
-		try {
-			Connection con = connect();
-
-			if (con == null)
-
-			{
-				return "Error while connecting to the database for inserting appointment details.";
-			}
-			// create a prepared statement
-			String query = " insert into contact (id,fname,lname,email,comment)" + " values (?,?,?,?,?)"; 
-			java.sql.PreparedStatement preparedStmt = con.prepareStatement(query);
-			
-			// binding values to appointment table
-			preparedStmt.setInt(1, id);
-			preparedStmt.setString(2, pID);
-			preparedStmt.setString(3, dID);
-			preparedStmt.setString(4, appDate);
-			preparedStmt.setString(5, appTime);
-			preparedStmt.execute();
-			con.close();
-			output = "Inserted successfully"; 
-
-			
-			} 
-			catch (Exception e) {
-			output = "Error while inserting the appointment details.";
-			System.err.println(e.getMessage());
-			}
-			return output;
-
-	}
 
 }
