@@ -21,13 +21,13 @@ public class Fund_Management_Service {
 
 	Fund_Management Obj = new Fund_Management();
 	//Get METHOD
-  @GET
+  /*@GET
   @Path("get")
   @Produces(MediaType.TEXT_PLAIN)
   public String getIt() {
 	 return "Got it aruni!";
 	       
- }
+ }*/
   //Get method for fund
   @GET
 	@Path("getFunds")
@@ -42,12 +42,12 @@ public class Fund_Management_Service {
 	@Path("Application") 
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED) 
 	@Produces(MediaType.TEXT_PLAIN)
-	public String insertApplication( @FormParam("ID") int ID,
-			                @FormParam("patientID") String full_name,
-							@FormParam("doctorID") String email,
-							@FormParam("appointmentDate") String phone,
-							@FormParam("appointmentDate") String research_category,
-							@FormParam("appointmentTime") String purpose)
+	public String insertApplication( @FormParam("ID") String ID,
+			                @FormParam("full_name") String full_name,
+							@FormParam("email") String email,
+							@FormParam("phone") String phone,
+							@FormParam("research_category") String research_category,
+							@FormParam("purpose") String purpose)
 							
 	{
 		String output = Obj.insertApplication(ID,full_name, email, phone, research_category,purpose);  
@@ -111,6 +111,8 @@ public class Fund_Management_Service {
 		 
 		 return output; 
    }
+    
+    
     
   
 }
